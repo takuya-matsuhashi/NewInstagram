@@ -12,7 +12,8 @@ import SVProgressHUD
 class LoginViewController: UIViewController {
     
     
-    @IBOutlet weak var mailAddressTextField: UITextField!
+   
+    @IBOutlet weak var mailaddressTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var displayNameTextField: UITextField!
     
@@ -20,7 +21,7 @@ class LoginViewController: UIViewController {
     @IBAction func handleLoginButton(_ sender: Any) {
         
         
-        if let address = mailAddressTextField.text, let password = passwordTextField.text {
+        if let address = mailaddressTextField.text, let password = passwordTextField.text {
             
             // アドレスとパスワード名のいずれかでも入力されていない時は何もしない
             if address.isEmpty || password.isEmpty {
@@ -53,11 +54,11 @@ class LoginViewController: UIViewController {
         }
     }
     
-    
     // アカウント作成ボタンをタップしたときに呼ばれるメソッド
-    @IBAction func handleCreateAccountButton(_ sender: Any) {
+    
+    @IBAction func handleCreateAccount(_ sender: Any) {
         
-        if let address = mailAddressTextField.text, let password = passwordTextField.text, let displayName = displayNameTextField.text {
+        if let address = mailaddressTextField.text, let password = passwordTextField.text, let displayName = displayNameTextField.text {
             
             // アドレスとパスワードと表示名のいずれかでも入力されていない時は何もしない
             if address.isEmpty || password.isEmpty || displayName.isEmpty {
@@ -110,6 +111,7 @@ class LoginViewController: UIViewController {
         }
         
     }
+   
     
     
     override func viewDidLoad() {
