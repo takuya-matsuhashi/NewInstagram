@@ -64,22 +64,16 @@
                         <viewLayoutGuide key="safeArea" id="KzE-lf-irO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Xo4-v9-HXK" firstAttribute="centerX" secondItem="XJ4-NG-fZP" secondAttribute="centerX" id="1Mc-zQ-403"/>
-                            <constraint firstItem="PoE-qP-FUY" firstAttribute="top" secondItem="Qi7-ZK-FEd" secondAttribute="bottom" constant="10" id="3fK-17-NgS"/>
-                            <constraint firstItem="PoE-qP-FUY" firstAttribute="leading" secondItem="KzE-lf-irO" secondAttribute="leading" constant="57" id="82U-4N-hco"/>
-                            <constraint firstItem="Qi7-ZK-FEd" firstAttribute="top" secondItem="Xo4-v9-HXK" secondAttribute="bottom" constant="10" id="85d-4r-fXu"/>
-                            <constraint firstItem="KzE-lf-irO" firstAttribute="trailing" secondItem="PoE-qP-FUY" secondAttribute="trailing" constant="57" id="E6p-M3-IFe"/>
-                            <constraint firstItem="KzE-lf-irO" firstAttribute="trailing" secondItem="Qi7-ZK-FEd" secondAttribute="trailing" constant="57" id="Gkj-fo-l7U"/>
-                            <constraint firstItem="IXM-IB-YU6" firstAttribute="leading" secondItem="KzE-lf-irO" secondAttribute="leading" constant="57" id="L6k-My-aOK"/>
-                            <constraint firstItem="IXM-IB-YU6" firstAttribute="top" secondItem="KzE-lf-irO" secondAttribute="top" constant="80" id="RR7-st-lvj"/>
-                            <constraint firstItem="i5a-Hb-zqe" firstAttribute="centerX" secondItem="XJ4-NG-fZP" secondAttribute="centerX" id="TJM-MN-2Ge"/>
-                            <constraint firstItem="i5a-Hb-zqe" firstAttribute="top" secondItem="IXM-IB-YU6" secondAttribute="bottom" constant="10" id="VDL-HA-S0T"/>
-                            <constraint firstItem="i5a-Hb-zqe" firstAttribute="top" secondItem="IXM-IB-YU6" secondAttribute="bottom" constant="10" id="c0q-EF-r7T"/>
-                            <constraint firstItem="PoE-qP-FUY" firstAttribute="top" secondItem="Qi7-ZK-FEd" secondAttribute="bottom" constant="10" id="f3P-DW-x2A"/>
-                            <constraint firstItem="KzE-lf-irO" firstAttribute="trailing" secondItem="IXM-IB-YU6" secondAttribute="trailing" constant="57" id="fHo-N2-nZg"/>
-                            <constraint firstItem="Xo4-v9-HXK" firstAttribute="top" secondItem="i5a-Hb-zqe" secondAttribute="bottom" constant="10" id="k7n-qf-mKF"/>
-                            <constraint firstItem="Qi7-ZK-FEd" firstAttribute="leading" secondItem="KzE-lf-irO" secondAttribute="leading" constant="57" id="tmo-Gz-G1A"/>
-                            <constraint firstItem="KzE-lf-irO" firstAttribute="bottom" secondItem="PoE-qP-FUY" secondAttribute="bottom" constant="516" id="yZn-zz-HyL"/>
+                            <constraint firstItem="Xo4-v9-HXK" firstAttribute="leading" secondItem="Qi7-ZK-FEd" secondAttribute="leading" id="5sc-8v-kk0"/>
+                            <constraint firstItem="IXM-IB-YU6" firstAttribute="top" secondItem="KzE-lf-irO" secondAttribute="top" constant="80" id="834-x9-SOe"/>
+                            <constraint firstItem="i5a-Hb-zqe" firstAttribute="top" secondItem="IXM-IB-YU6" secondAttribute="bottom" constant="10" id="FKM-vL-2rK"/>
+                            <constraint firstItem="Qi7-ZK-FEd" firstAttribute="leading" secondItem="PoE-qP-FUY" secondAttribute="leading" id="PJ8-ib-Npp"/>
+                            <constraint firstItem="PoE-qP-FUY" firstAttribute="top" secondItem="Qi7-ZK-FEd" secondAttribute="bottom" constant="10" id="PkK-WC-SAW"/>
+                            <constraint firstItem="Qi7-ZK-FEd" firstAttribute="top" secondItem="Xo4-v9-HXK" secondAttribute="bottom" constant="10" id="hZo-WJ-UI0"/>
+                            <constraint firstItem="IXM-IB-YU6" firstAttribute="centerX" secondItem="XJ4-NG-fZP" secondAttribute="centerX" id="ise-Ar-GSn"/>
+                            <constraint firstItem="IXM-IB-YU6" firstAttribute="leading" secondItem="i5a-Hb-zqe" secondAttribute="leading" id="j7b-a3-9MU"/>
+                            <constraint firstItem="Xo4-v9-HXK" firstAttribute="top" secondItem="i5a-Hb-zqe" secondAttribute="bottom" constant="10" id="kkF-f6-7KG"/>
+                            <constraint firstItem="i5a-Hb-zqe" firstAttribute="leading" secondItem="Xo4-v9-HXK" secondAttribute="leading" id="wzI-u2-USj"/>
                         </constraints>
                     </view>
                     <connections>
