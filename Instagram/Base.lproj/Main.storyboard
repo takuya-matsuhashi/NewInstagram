@@ -106,17 +106,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQd-mH-jib">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQd-mH-jib">
                                 <rect key="frame" x="57" y="204" width="300" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="6V5-tj-eKu"/>
-                                </constraints>
                                 <state key="normal" title="投稿" backgroundImage="btn"/>
                                 <connections>
                                     <action selector="handlePostButton:" destination="enT-aT-0PO" eventType="touchUpInside" id="gjI-qS-2BA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iU-gh-2oG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iU-gh-2oG">
                                 <rect key="frame" x="57" y="254" width="300" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="oEk-E0-Kk8"/>
@@ -130,19 +127,20 @@
                         <viewLayoutGuide key="safeArea" id="OrT-Lw-pmF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="W7z-Vs-HI8" firstAttribute="bottom" secondItem="2Qi-JH-C8R" secondAttribute="bottom" id="2Zr-rj-vc8"/>
-                            <constraint firstItem="2Qi-JH-C8R" firstAttribute="top" secondItem="OrT-Lw-pmF" secondAttribute="top" constant="20" id="95w-Yb-79m"/>
-                            <constraint firstItem="4iU-gh-2oG" firstAttribute="centerX" relation="greaterThanOrEqual" secondItem="jy7-My-f8B" secondAttribute="centerX" constant="300" id="Pm8-QL-nvN"/>
-                            <constraint firstItem="W7z-Vs-HI8" firstAttribute="leading" secondItem="2Qi-JH-C8R" secondAttribute="trailing" constant="10" id="U2T-px-JPY"/>
-                            <constraint firstItem="OrT-Lw-pmF" firstAttribute="trailing" secondItem="W7z-Vs-HI8" secondAttribute="trailing" constant="10" id="VId-OL-yjG"/>
-                            <constraint firstItem="4iU-gh-2oG" firstAttribute="top" secondItem="EQd-mH-jib" secondAttribute="bottom" constant="10" id="W0u-Il-Ahb"/>
-                            <constraint firstItem="EQd-mH-jib" firstAttribute="centerX" relation="greaterThanOrEqual" secondItem="jy7-My-f8B" secondAttribute="centerX" constant="300" id="ZMo-zV-KLL"/>
-                            <constraint firstItem="EQd-mH-jib" firstAttribute="top" secondItem="W7z-Vs-HI8" secondAttribute="bottom" constant="20" id="hkj-Mw-xkp"/>
-                            <constraint firstItem="2Qi-JH-C8R" firstAttribute="leading" secondItem="OrT-Lw-pmF" secondAttribute="leading" constant="10" id="nJM-L2-iG3"/>
+                            <constraint firstItem="4iU-gh-2oG" firstAttribute="top" secondItem="EQd-mH-jib" secondAttribute="bottom" constant="10" id="DDL-ss-Qxl"/>
+                            <constraint firstItem="EQd-mH-jib" firstAttribute="leading" secondItem="4iU-gh-2oG" secondAttribute="leading" id="LFK-6k-wB2"/>
+                            <constraint firstItem="W7z-Vs-HI8" firstAttribute="leading" secondItem="2Qi-JH-C8R" secondAttribute="trailing" constant="10" id="NdF-Ax-EwV"/>
+                            <constraint firstItem="EQd-mH-jib" firstAttribute="top" secondItem="2Qi-JH-C8R" secondAttribute="bottom" constant="20" id="P0A-Rl-2oK"/>
+                            <constraint firstItem="2Qi-JH-C8R" firstAttribute="bottom" secondItem="W7z-Vs-HI8" secondAttribute="bottom" id="Th6-qc-nmK"/>
+                            <constraint firstItem="OrT-Lw-pmF" firstAttribute="trailing" secondItem="W7z-Vs-HI8" secondAttribute="trailing" constant="10" id="aLN-kT-D0P"/>
+                            <constraint firstItem="EQd-mH-jib" firstAttribute="centerX" secondItem="jy7-My-f8B" secondAttribute="centerX" id="kHw-mo-QeB"/>
+                            <constraint firstItem="2Qi-JH-C8R" firstAttribute="top" secondItem="OrT-Lw-pmF" secondAttribute="top" constant="20" id="mYG-uc-DoC"/>
+                            <constraint firstItem="2Qi-JH-C8R" firstAttribute="leading" secondItem="OrT-Lw-pmF" secondAttribute="leading" constant="10" id="sCa-XO-mlT"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="2Qi-JH-C8R" id="aYM-u1-JiM"/>
+                        <outlet property="textField" destination="W7z-Vs-HI8" id="ufj-hc-0ZK"/>
                         <outlet property="textView" destination="W7z-Vs-HI8" id="vzh-gn-1OI"/>
                     </connections>
                 </viewController>
@@ -220,6 +218,9 @@
                                     <constraint firstAttribute="width" constant="300" id="ZFS-du-wqg"/>
                                 </constraints>
                                 <state key="normal" title="カメラ" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="handleCameraButton:" destination="gg8-QT-KJQ" eventType="touchUpInside" id="7Jp-Dn-77R"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfC-Zr-Rmd">
                                 <rect key="frame" x="57" y="224" width="300" height="40"/>

@@ -13,8 +13,9 @@ class PostViewController: UIViewController {
     var image: UIImage!
 
     @IBOutlet weak var imageView: UIImageView!
+   
     @IBOutlet weak var textField: UITextField!
-
+    
     // 投稿ボタンをタップしたときに呼ばれるメソッド
     @IBAction func handlePostButton(_ sender: Any) {
         // 画像をJPEG形式に変換する

@@ -11,8 +11,6 @@ import SVProgressHUD
 
 class SettingViewController: UIViewController {
     
-    
-    
     @IBOutlet weak var displayNameTextField: UITextField!
     
  

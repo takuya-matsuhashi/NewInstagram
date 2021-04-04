@@ -70,11 +70,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="captionLabel" destination="usr-Ez-JTw" id="48w-v2-0wu"/>
-                <outlet property="dateLabel" destination="Ubn-di-vMe" id="AUP-vZ-kOT"/>
-                <outlet property="likeButton" destination="qXH-L3-qut" id="e2h-7V-nqc"/>
-                <outlet property="likeLabel" destination="fYk-CA-6rm" id="1Si-Cy-4vZ"/>
-                <outlet property="postImageView" destination="bOu-cn-H0w" id="dGe-e4-IYU"/>
+                <outlet property="captionLabel" destination="usr-Ez-JTw" id="dfk-HB-C0c"/>
+                <outlet property="dateLabel" destination="Ubn-di-vMe" id="j2W-kp-YvU"/>
+                <outlet property="likeButton" destination="qXH-L3-qut" id="CcA-do-rOl"/>
+                <outlet property="likeLabel" destination="fYk-CA-6rm" id="1ya-ez-nr4"/>
+                <outlet property="postImageView" destination="bOu-cn-H0w" id="n9f-DD-q6S"/>
             </connections>
             <point key="canvasLocation" x="196.37681159420291" y="239.39732142857142"/>
         </tableViewCell>
