@@ -15,6 +15,7 @@ class SettingViewController: UIViewController {
     
     @IBOutlet weak var displayNameTextField: UITextField!
     
+ 
     @IBAction func handleChangeButton(_ sender: Any) {
         
         if let displayName = displayNameTextField.text {
@@ -61,8 +62,8 @@ class SettingViewController: UIViewController {
         
         // ログイン画面から戻ってきた時のためにホーム画面（index = 0）を選択している状態にしておく
         tabBarController?.selectedIndex = 0
+        
     }
-    
     
     
     override func viewWillAppear(_ animated: Bool) {
