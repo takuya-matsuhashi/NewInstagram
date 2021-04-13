@@ -75,8 +75,27 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
         // セル内のボタンのアクションをソースコードで設定する
         cell.likeButton.addTarget(self, action:#selector(handleButton(_:forEvent:)), for: .touchUpInside)
+        
+        cell.commentButton.addTarget(self, action:#selector(handleCommentButton(_:forEvent:)), for: .touchUpInside)
 
         return cell
+    }
+    @objc func handleCommentButton(_ sender: UIButton, forEvent event: UIEvent) {
+        // タップされたセルのインデックスを求める
+        let touch = event.allTouches?.first
+        let point = touch!.location(in: self.tableView)
+        let indexPath = tableView.indexPathForRow(at: point)
+        // 配列からタップされたインデックスのデータを取り出す
+        let postData = postArray[indexPath!.row]
+
+        
+        let commentText = commentTextField.text
+        let name = Auth.auth().currentUser!.displayName!
+        let commentData = "\(name) : \(commentText)"
+//        コメントをFireBaseに追加
+        let data = FieldValue.arrayUnion([commentData])
+        let store = Firestore.firestore().collection(Const.PostPath).document(postData.id)
+        store.updateData(["comment":data])
     }
 
     // セル内のボタンがタップされた時に呼ばれるメソッド

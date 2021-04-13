@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseUI
+import Firebase
 
 class PostTableViewCell: UITableViewCell {
 
@@ -16,7 +17,16 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
     
-
+    @IBOutlet weak var commentTextField: UITextField!
+    //    課題追加
+   
+    @IBOutlet weak var CommentContentsLabel: UILabel!
+    
+    @IBOutlet weak var commentButton: UIButton!
+    
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -59,6 +69,13 @@ class PostTableViewCell: UITableViewCell {
             let buttonImage = UIImage(named: "like_none")
             self.likeButton.setImage(buttonImage, for: .normal)
         }
+//        コメントの表示
+        var comments = ""
+        for comment in postData.comment {
+            comments += "\(comment)\n"
+        }
+        CommentContentsLabel.text = comments
+        
     }
 }
 
