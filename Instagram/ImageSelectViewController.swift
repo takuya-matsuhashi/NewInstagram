@@ -46,7 +46,7 @@ class ImageSelectViewController: UIViewController, UIImagePickerControllerDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
         // 写真を撮影/選択したときに呼ばれるメソッド
         
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -87,5 +87,5 @@ class ImageSelectViewController: UIViewController, UIImagePickerControllerDelega
         }
         
     }
-}
+
 
