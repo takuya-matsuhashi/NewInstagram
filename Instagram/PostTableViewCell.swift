@@ -74,7 +74,7 @@ class PostTableViewCell: UITableViewCell {
         for comment in postData.comment {
             comments += "\(comment)\n"
         }
-        CommentContentsLabel.text = comments
+        commentTextField.text = comments
         
     }
 }
