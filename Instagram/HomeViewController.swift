@@ -14,7 +14,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     // Firestoreのリスナー
     var listener: ListenerRegistration!
-
+    var comment = ""
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -73,6 +73,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PostTableViewCell
         cell.setPostData(postArray[indexPath.row])
 
+        comment = cell.commentTextField.text ?? ""
         // セル内のボタンのアクションをソースコードで設定する
         cell.likeButton.addTarget(self, action:#selector(handleButton(_:forEvent:)), for: .touchUpInside)
         
@@ -89,7 +90,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let postData = postArray[indexPath!.row]
 
         
-        let commentText = commentTextField.text
+        let commentText = comment
         let name = Auth.auth().currentUser!.displayName!
         let commentData = "\(name) : \(commentText)"
 //        コメントをFireBaseに追加
