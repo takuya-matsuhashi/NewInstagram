@@ -64,51 +64,51 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="コメント入力欄" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vKw-c3-4at">
+                        <rect key="frame" x="61" y="508" width="303" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaA-ju-v1S">
-                        <rect key="frame" x="20" y="527" width="73" height="21"/>
+                        <rect key="frame" x="61" y="550" width="303" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="CMD-59-EBZ"/>
-                            <constraint firstAttribute="width" constant="73" id="yyV-cm-vdG"/>
+                            <constraint firstAttribute="height" constant="21" id="fyz-U5-7Cx"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="コメント入力欄" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vKw-c3-4at">
-                        <rect key="frame" x="78" y="520" width="303" height="34"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
                 </subviews>
                 <constraints>
                     <constraint firstItem="usr-Ez-JTw" firstAttribute="firstBaseline" secondItem="Ubn-di-vMe" secondAttribute="firstBaseline" id="2fg-fh-enp"/>
                     <constraint firstItem="fYk-CA-6rm" firstAttribute="baseline" secondItem="Fhy-dM-uj5" secondAttribute="firstBaseline" id="48r-PS-viV"/>
                     <constraint firstItem="bOu-cn-H0w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="4af-U8-iUB"/>
-                    <constraint firstItem="vKw-c3-4at" firstAttribute="top" secondItem="usr-Ez-JTw" secondAttribute="bottom" constant="8" symbolic="YES" id="6F8-sq-yTv"/>
                     <constraint firstItem="usr-Ez-JTw" firstAttribute="top" secondItem="fYk-CA-6rm" secondAttribute="bottom" constant="16" id="7Gz-1O-4Wc"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="vKw-c3-4at" secondAttribute="bottom" constant="24" id="7gw-k2-msw"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="aaA-ju-v1S" secondAttribute="bottom" constant="7" id="83S-SB-B8z"/>
                     <constraint firstItem="fYk-CA-6rm" firstAttribute="leading" secondItem="qXH-L3-qut" secondAttribute="trailing" constant="23" id="B2w-6m-YAh"/>
                     <constraint firstItem="Fhy-dM-uj5" firstAttribute="baseline" secondItem="fYk-CA-6rm" secondAttribute="firstBaseline" id="F8V-9i-kMC"/>
                     <constraint firstItem="usr-Ez-JTw" firstAttribute="baseline" secondItem="Ubn-di-vMe" secondAttribute="baseline" id="Fsc-G0-WN8"/>
+                    <constraint firstItem="vKw-c3-4at" firstAttribute="leading" secondItem="aaA-ju-v1S" secondAttribute="leading" id="JwM-8D-1cB"/>
                     <constraint firstItem="qXH-L3-qut" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="KKp-bn-6YX"/>
+                    <constraint firstItem="vKw-c3-4at" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="41" id="MfA-c7-kXs"/>
                     <constraint firstItem="bOu-cn-H0w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QPT-tA-Bk9"/>
                     <constraint firstItem="fYk-CA-6rm" firstAttribute="baseline" secondItem="Fhy-dM-uj5" secondAttribute="baseline" id="SGb-8a-hPU"/>
                     <constraint firstAttribute="trailing" secondItem="bOu-cn-H0w" secondAttribute="trailing" id="U3C-5j-SAA"/>
+                    <constraint firstItem="vKw-c3-4at" firstAttribute="centerX" secondItem="Fhy-dM-uj5" secondAttribute="centerX" id="WW5-cb-bOn"/>
+                    <constraint firstItem="aaA-ju-v1S" firstAttribute="top" secondItem="usr-Ez-JTw" secondAttribute="bottom" constant="38" id="Zbf-pK-tGf"/>
                     <constraint firstItem="bOu-cn-H0w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ziy-eI-ujp"/>
                     <constraint firstItem="Fhy-dM-uj5" firstAttribute="leading" secondItem="fYk-CA-6rm" secondAttribute="trailing" constant="20" id="ZsJ-bv-3Rr"/>
                     <constraint firstItem="usr-Ez-JTw" firstAttribute="top" secondItem="qXH-L3-qut" secondAttribute="bottom" constant="5" id="aNd-yP-VYe"/>
-                    <constraint firstItem="vKw-c3-4at" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="58" id="c4M-fZ-kI8"/>
+                    <constraint firstItem="aaA-ju-v1S" firstAttribute="top" secondItem="vKw-c3-4at" secondAttribute="bottom" constant="8" symbolic="YES" id="c1n-IW-1gr"/>
                     <constraint firstItem="Ubn-di-vMe" firstAttribute="top" secondItem="Fhy-dM-uj5" secondAttribute="bottom" constant="10" id="cGR-sv-vyO"/>
                     <constraint firstItem="Fhy-dM-uj5" firstAttribute="centerX" secondItem="bOu-cn-H0w" secondAttribute="centerX" id="cHn-d4-Hta"/>
-                    <constraint firstItem="aaA-ju-v1S" firstAttribute="top" secondItem="usr-Ez-JTw" secondAttribute="bottom" constant="15" id="d2r-d5-t35"/>
-                    <constraint firstItem="aaA-ju-v1S" firstAttribute="centerY" secondItem="vKw-c3-4at" secondAttribute="centerY" id="fqN-f2-cuC"/>
                     <constraint firstItem="fYk-CA-6rm" firstAttribute="centerY" secondItem="Fhy-dM-uj5" secondAttribute="centerY" id="g4h-Cs-NQa"/>
+                    <constraint firstItem="vKw-c3-4at" firstAttribute="trailing" secondItem="aaA-ju-v1S" secondAttribute="trailing" id="h7t-lF-cW3"/>
                     <constraint firstAttribute="trailing" secondItem="bOu-cn-H0w" secondAttribute="trailing" id="hOq-PR-9IL"/>
-                    <constraint firstItem="Ubn-di-vMe" firstAttribute="trailing" secondItem="vKw-c3-4at" secondAttribute="trailing" id="iqW-Om-6mG"/>
                     <constraint firstItem="Ubn-di-vMe" firstAttribute="leading" secondItem="usr-Ez-JTw" secondAttribute="trailing" constant="8" symbolic="YES" id="mu5-td-Gty"/>
                     <constraint firstItem="qXH-L3-qut" firstAttribute="top" secondItem="bOu-cn-H0w" secondAttribute="bottom" constant="8" symbolic="YES" id="oMe-9q-CbU"/>
                     <constraint firstItem="bOu-cn-H0w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="tpW-1H-mNy"/>
-                    <constraint firstItem="usr-Ez-JTw" firstAttribute="leading" secondItem="aaA-ju-v1S" secondAttribute="leading" id="v2P-RG-kxA"/>
+                    <constraint firstItem="vKw-c3-4at" firstAttribute="top" secondItem="Fhy-dM-uj5" secondAttribute="bottom" constant="31" id="v3G-wX-N5a"/>
                     <constraint firstItem="qXH-L3-qut" firstAttribute="centerY" secondItem="fYk-CA-6rm" secondAttribute="centerY" id="vml-fI-Dib"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Ubn-di-vMe" secondAttribute="trailing" constant="23" id="xQP-Uf-Y7G"/>
                     <constraint firstItem="qXH-L3-qut" firstAttribute="leading" secondItem="usr-Ez-JTw" secondAttribute="leading" id="z7X-yS-XXf"/>
